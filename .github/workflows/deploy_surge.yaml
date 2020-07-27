@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: React Expense_tracking App Deploy to surge 
+name: React App tracking  Deploy to surge 
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -37,7 +37,7 @@ jobs:
     - name: Install Surge
       run: npm install --global surge
     - name: Deploy Surge
-      run: surge ./build qurat_Expense_tracking_app.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build quratmumtaz3.surge.sh --token ${{secrets.SURGE_TOKEN}}
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
